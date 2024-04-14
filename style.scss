@@ -1,10 +1,11 @@
 $font : 18px;
 $text_color:hsl(0, 0%, 100%);
 
-%center{
-    display: flex;
-    justify-items: center;
+@mixin center(){
+    display : flex;
+    position: relative;
     align-items: center;
+    justify-content: center;
 }
 
 @mixin center-back($url){
@@ -31,12 +32,14 @@ html{
         height: 100%;
         font-size: $font;
         
-        
+//--------------------------------------------------------------------------------------header
         header{
             color: $text_color;
             height: 100%;
             width: 100%;
             @include center-back("asset/photos/image-header.jpg");
+            
+
             nav{
                 width: 100%;
                 height: 20%;
@@ -55,38 +58,63 @@ html{
                     }
                 }
             }
+            section{
+                
+                @include center();
+
+                h1{
+                    font-size: 56px;
+                }
+                img{
+                    margin-top: 170px;
+                }
+            }
     
         }
-        
+        //---------------------------------------------------------------------------------------------Main
         main{
-            height: 100%;
+            height: 75%*5;
             width: 100%;
             display: block;
             section{
                 display: flex;
                 flex-direction: row;
-                height: 100%;
+                align-content: center;
+                align-items: center;
+                height: 75%/5;
                 width: 100%;
                 article{
                     display: flex;
                     flex-direction: column;
-                    height: 100%;
+                    height: 100%/5;
                     width: 50%;
                     h1{
-                        max-width: 10%;
+                        max-width: 100%;
+                        
+                        
                     }
                     p{
                         max-width: 100%;
                     }
-                    .oeuf{
-                        @include center-back('asset/photos/image-transform.jpg');
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
                     }
                     
                 }
             }
+            section.testimonials{
+
+            }
         }
         background-image: url();
-        //footer
+        //---------------------------------------------------------------------------------------------------footer
+        footer{
+            height: 75%/5;
+            width: 100%;
+            background-color: #90d4c5;
+        }
     }
 
 }

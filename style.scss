@@ -81,12 +81,12 @@ html{
                 flex-direction: row;
                 align-content: center;
                 align-items: center;
-                height: 75%/5;
+                height: 100%/5;
                 width: 100%;
                 article{
                     display: flex;
                     flex-direction: column;
-                    height: 100%/5;
+                    height: 100%;
                     width: 50%;
                     h1{
                         max-width: 100%;
@@ -103,17 +103,54 @@ html{
                     }
                     
                 }
+                article.image_cerise{
+                    height: auto;
+                    width: 50%;
+                    @include center-back("asset/photos/image-graphic-design.jpg");
+                }
+                article.image_orange{
+                    height: auto;
+                    width: 50%;
+                    @include center-back("asset/photos/image-photography.jpg");
+                }
             }
             section.testimonials{
-
+                
             }
+
         }
         background-image: url();
         //---------------------------------------------------------------------------------------------------footer
         footer{
-            height: 75%/5;
+            height: 25%;
             width: 100%;
             background-color: #90d4c5;
+            section{
+                height: 50%;
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                justify-content: center;
+                align-items: center;
+                a{
+                    margin-right: 15px;
+                    text-decoration: none;
+                    color: #2a7564;
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
+            ul{
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                justify-content: center;
+                align-items: center;
+                li{
+                    margin-right: 15px;
+                }
+            }
         }
     }
 

@@ -74,9 +74,12 @@ html {
   }
   body main section article h1 {
     max-width: 100%;
+    color: #24303E;
+    font-size: 40px;
   }
   body main section article p {
     max-width: 100%;
+    color: #5B636D;
   }
   body main section article img {
     width: 100%;
@@ -92,6 +95,13 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  body main section article.image_cerise h1 {
+    color: #24554A;
+    font-size: 28px;
+  }
+  body main section article.image_cerise p {
+    color: #3E7467;
+  }
   body main section article.image_orange {
     height: auto;
     width: 50%;
@@ -99,6 +109,13 @@ html {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  body main section article.image_orange h1 {
+    color: #052C3B;
+    font-size: 28px;
+  }
+  body main section article.image_orange p {
+    color: #19536C;
   }
   body footer {
     height: 25%;

@@ -90,11 +90,12 @@ html{
                     width: 50%;
                     h1{
                         max-width: 100%;
-                        
-                        
+                        color: #24303E;
+                        font-size: 40px;
                     }
                     p{
                         max-width: 100%;
+                        color: #5B636D;
                     }
                     img{
                         width: 100%;
@@ -107,11 +108,25 @@ html{
                     height: auto;
                     width: 50%;
                     @include center-back("asset/photos/image-graphic-design.jpg");
+                    h1{
+                        color: #24554A;
+                        font-size: 28px;
+                    }
+                    p{
+                        color: #3E7467;
+                    }
                 }
                 article.image_orange{
                     height: auto;
                     width: 50%;
                     @include center-back("asset/photos/image-photography.jpg");
+                    h1{
+                        color: #052C3B;
+                        font-size: 28px;
+                    }
+                    p{
+                        color: #19536C ;
+                    }
                 }
             }
             section.testimonials{

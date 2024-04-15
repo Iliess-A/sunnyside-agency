@@ -12,20 +12,24 @@
 <body>
 <!-- ------------------------------------------  Header  ---------------------------------------- -->
   <header>
-    <nav>
+    <section>
+      <img src="asset/logo.svg" alt="logo" id="logo">
+      <img src="asset/icon/icon-hamburger.svg" alt="burger" id="burger">
+      <nav>
       <ul>
-        <li><img src="asset/logo.svg" alt="logo"></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Service</a></li>
         <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact<a></li>
+        <li><a href="#" id="Contact">Contact<a></li>
       </ul>
     </nav>
+    </section>
+    
     <section>
       <h1>We are creatives</h1>
     </section>
     <section>
-      <img src="asset/icon/icon-arrow-down.svg" alt="arrow down">
+      <img src="asset/icon/icon-arrow-down.svg" alt="arrow down" id="arrow">
     </section>
     
   </header>
@@ -46,6 +50,7 @@
         <p>
           <a href="#">Learn more</a>
         </p>
+
       </article>
 
       <article>
@@ -65,7 +70,7 @@
 
         <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
       
-        <a><p>Learn more</p></a>
+        <p><a href="#">Learn more</a></p>
       </article>
 
     </section>
@@ -77,44 +82,50 @@
        
         <h1>Graphic design</h1>
         <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+
       </article>
 
       <article class="image_orange">
        
         <h1>Photography</h1>
         <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+
       </article>
 
     </section>
 
 <!-- ------------------------------------------  TEST CLIENTS  ---------------------------------------- -->
 
-    
-    <section>
-      <h1>Client testimonials</h1>
-    </section>
+    <section class="testimonials">
+      
+      <article>
+        <h1>Client testimonials</h1>
+      </article>
 
-    <section class="testimonials"></section>
-      <article>
-        <img src="asset/people/image-emily.jpg" alt="Emily">
-        <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-        <p>Emily R.</p>
-        <p>Marketing Director</p>
-      </article>
+      <section id="testi_raw">
+
+        <article>
+          <img src="asset/people/image-emily.jpg" alt="Emily">
+          <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <h1>Emily R.</h1>
+          <p class="pied_text">Marketing Director</p>
+        </article>
       
-      <article>
-        <img src="asset/people/image-thomas.jpg" alt="Thomas">
-        p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-        <p>Thomas S.</p>
-        <p>Chief Operating Officer</p>
-      </article>
+        <article>
+          <img src="asset/people/image-thomas.jpg" alt="Thomas">
+          <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <h1>Thomas S.</h1>
+          <p class="pied_text">Chief Operating Officer</p>
+        </article>
       
-      <article>
-        <img src="asset/people/image-jennie.jpg" alt="Jennie">
-        <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-        <p>Jennie F.</p>
-        <p>Business Owner</p>
-      </article>
+        <article>
+          <img src="asset/people/image-jennie.jpg" alt="Jennie">
+          <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <h1>Jennie F.</h1>
+          <p class="pied_text">Business Owner</p>
+        </article>
+
+    </section>
       
     </section>
     
@@ -132,11 +143,15 @@
 
 <!-- ------------------------------------------  footer  ---------------------------------------- -->
 <footer>
+
+  <section id="logo">
+    <img src="asset/logo.svg" alt="logo">
+  </section>
+
   <section>
   <p><a href="#">About</a></p>
   <p><a href="#">Services</a></p>
   <p><a href="#">Projects</a></p>
-  <p><a href="#">Contact</a></p>
   </section>
 
   <section>

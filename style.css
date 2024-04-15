@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
 * {
   margin: 0;
 }
@@ -7,12 +9,40 @@ html {
   width: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+  Body header {
+    width: 100%;
+    height: 65vh;
+    display: block;
+    background-image: url("asset/photos/image-header.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  Body header nav {
+    display: content;
+  }
+  Body header nav ul {
+    display: none;
+    list-style-type: none;
+    text-align: center;
+  }
+  Body header nav ul li a {
+    font-family: "Barlow";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.1428571492px;
+    text-align: left;
+    color: #808397;
+    text-decoration: none;
+  }
+}
 @media screen and (min-width: 1024px) {
   body {
     width: 100%;
     height: 100%;
     font-size: 18px;
-    background-image: url();
   }
   body header {
     color: hsl(0, 0%, 100%);
@@ -22,24 +52,17 @@ html {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  body header nav {
-    width: 100%;
-    height: 20%;
-  }
-  body header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
+    flex-direction: column;
   }
-  body header nav ul li {
-    margin: 10px;
-    padding: 10px;
+  body header #arrow {
+    padding-top: 10%;
   }
-  body header nav ul li a {
-    text-decoration: none;
-    color: hsl(0, 0%, 100%);
+  body header #burger {
+    display: none;
+  }
+  body header #logo {
+    position: relative;
   }
   body header section {
     display: flex;
@@ -47,11 +70,33 @@ html {
     align-items: center;
     justify-content: center;
   }
-  body header section h1 {
-    font-size: 56px;
+  body header section nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    height: 20vh;
   }
-  body header section img {
-    margin-top: 170px;
+  body header section nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  body header section nav ul li {
+    margin: 10px;
+    padding: 10px;
+  }
+  body header section nav ul li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+  }
+  body header section h1 {
+    font-family: "Fraunces" 9pt Soft;
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 69.05px;
+    letter-spacing: 8.75px;
+    text-align: center;
   }
   body main {
     height: 375%;
@@ -61,25 +106,53 @@ html {
   body main section {
     display: flex;
     flex-direction: row;
-    align-content: center;
-    align-items: center;
-    height: 100%/5;
+    height: 75vh;
     width: 100%;
   }
   body main section article {
     display: flex;
     flex-direction: column;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     width: 50%;
   }
   body main section article h1 {
     max-width: 100%;
     color: #24303E;
+    padding-left: 20%;
+    padding-right: 35%;
+    font-family: "Fraunces" 9pt Soft;
     font-size: 40px;
+    font-weight: 900;
+    line-height: 49.32px;
+    letter-spacing: -0.2857142985px;
+    text-align: left;
   }
   body main section article p {
     max-width: 100%;
     color: #5B636D;
+    padding-top: 3%;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-family: "Barlow";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.1285714358px;
+    text-align: left;
+  }
+  body main section article a {
+    text-decoration: none;
+    color: #24303E;
+    font-family: "Fraunces" 9pt Soft;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-align: left;
   }
   body main section article img {
     width: 100%;
@@ -88,7 +161,7 @@ html {
        object-fit: cover;
   }
   body main section article.image_cerise {
-    height: auto;
+    height: 100%;
     width: 50%;
     background-image: url("asset/photos/image-graphic-design.jpg");
     background-position: center center;
@@ -98,12 +171,19 @@ html {
   body main section article.image_cerise h1 {
     color: #24554A;
     font-size: 28px;
+    padding-top: 40%;
+    padding-left: 15%;
+    padding-right: 15%;
   }
   body main section article.image_cerise p {
     color: #3E7467;
+    padding-top: 2%;
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: center;
   }
   body main section article.image_orange {
-    height: auto;
+    height: 100%;
     width: 50%;
     background-image: url("asset/photos/image-photography.jpg");
     background-position: center center;
@@ -113,22 +193,118 @@ html {
   body main section article.image_orange h1 {
     color: #052C3B;
     font-size: 28px;
+    padding-top: 40%;
+    padding-left: 15%;
+    padding-right: 15%;
   }
   body main section article.image_orange p {
     color: #19536C;
+    padding-top: 2%;
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: center;
+  }
+  body main section.testimonials {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15%;
+    width: 100%;
+    height: 75vh;
+  }
+  body main section.testimonials article {
+    height: auto;
+  }
+  body main section.testimonials article h1 {
+    color: #A7AAAD;
+    font-family: "Fraunces" 9pt Soft;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24.66px;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0%;
+  }
+  body main section.testimonials #testi_raw {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+  body main section.testimonials #testi_raw article {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%/3;
+    height: 100%/3;
+  }
+  body main section.testimonials #testi_raw article h1 {
+    padding-top: 10%;
+    color: #24303E;
+    font-family: Fraunces 9pt Soft;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22.19px;
+    letter-spacing: -0.1285714358px;
+    text-align: center;
+  }
+  body main section.testimonials #testi_raw article p {
+    color: #5B636D;
+    text-align: center;
+    padding-top: 10%;
+    font-family: "Barlow";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.1285714358px;
+  }
+  body main section.testimonials #testi_raw article p.pied_text {
+    color: #A7AAAD;
+    font-family: "Barlow";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.1000000015px;
+    text-align: center;
+  }
+  body main section.testimonials #testi_raw article img {
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+  }
+  body main section.quatuor {
+    height: 20vh;
+    width: 100%;
+  }
+  body main section.quatuor article {
+    height: 25vw;
+    width: 25%;
   }
   body footer {
-    height: 25%;
+    height: 30vh;
     width: 100%;
     background-color: #90d4c5;
   }
   body footer section {
-    height: 50%;
+    height: 33%;
     display: flex;
     flex-direction: row;
     list-style-type: none;
     justify-content: center;
     align-items: center;
+  }
+  body footer section #logo img {
+    fill: #2C7566;
+    stroke: #2C7566;
   }
   body footer section a {
     margin-right: 15px;
@@ -137,6 +313,8 @@ html {
   }
   body footer section a:hover {
     color: white;
+    fill: white;
+    stroke: white;
   }
   body footer ul {
     display: flex;
